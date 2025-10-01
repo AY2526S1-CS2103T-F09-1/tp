@@ -4,6 +4,7 @@ import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.FindCommand;
 import seedu.address.logic.commands.RemarkCommand;
 import seedu.address.model.person.NameContainsKeywordsPredicate;
+import seedu.address.model.person.Remark;
 
 import java.util.Arrays;
 
@@ -25,12 +26,12 @@ public class RemarkCommandParserTest {
         // have remark
         Index targetIndex = INDEX_FIRST_PERSON;
         String userInput = targetIndex.getOneBased() + " " + PREFIX_REMARK + nonEmptyRemark;
-        RemarkCommand expectedCommand = new RemarkCommand(INDEX_FIRST_PERSON, nonEmptyRemark);
+        RemarkCommand expectedCommand = new RemarkCommand(INDEX_FIRST_PERSON, new Remark(nonEmptyRemark));
         assertParseSuccess(parser, userInput, expectedCommand);
 
         // no remark
         userInput = targetIndex.getOneBased() + " " + PREFIX_REMARK;
-        expectedCommand = new RemarkCommand(INDEX_FIRST_PERSON, "");
+        expectedCommand = new RemarkCommand(INDEX_FIRST_PERSON, new Remark(""));
         assertParseSuccess(parser, userInput, expectedCommand);
     }
 
@@ -44,6 +45,4 @@ public class RemarkCommandParserTest {
         // no index
         assertParseFailure(parser, RemarkCommand.COMMAND_WORD + " " + nonEmptyRemark, expectedMessage);
     }
-
-
 }
