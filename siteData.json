@@ -9,7 +9,7 @@
         "project-team": "Project team",
         "jun-hao": "Jun Hao",
         "yan-zhi": "Yan Zhi",
-        "johnny-doe": "Johnny Doe",
+        "goh-jin-yuan": "Goh Jin Yuan",
         "aloysius-pek": "Aloysius Pek",
         "chloe-ong": "Chloe Ong"
       },
@@ -142,6 +142,11 @@
     },
     {
       "src": "team/chloeongzy.md",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/jinyuan.md",
       "headings": {},
       "headingKeywords": {}
     },
