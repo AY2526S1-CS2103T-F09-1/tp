@@ -11,7 +11,7 @@
         "jane-doe": "Jane Doe",
         "johnny-doe": "Johnny Doe",
         "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "chloe-ong": "Chloe Ong"
       },
       "headingKeywords": {}
     },
@@ -133,6 +133,11 @@
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
       },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/chloeongzy.md",
+      "headings": {},
       "headingKeywords": {}
     },
     {
