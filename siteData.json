@@ -10,7 +10,7 @@
         "jun-hao": "Jun Hao",
         "yan-zhi": "Yan Zhi",
         "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
+        "aloysius-pek": "Aloysius Pek",
         "chloe-ong": "Chloe Ong"
       },
       "headingKeywords": {}
@@ -133,6 +133,11 @@
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
       },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/aloysius.md",
+      "headings": {},
       "headingKeywords": {}
     },
     {
