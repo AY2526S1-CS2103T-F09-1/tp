@@ -284,14 +284,14 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
-|----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | new user                                   | see usage instructions       | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person             |                                                                        |
-| `* * *`  | user                                       | delete a person              | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name        | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name         | locate a person easily                                                 |
+| Priority | As a …​ | I want to …​                                                          | So that I can…​                                                      |
+|----------|---------|-----------------------------------------------------------------------|----------------------------------------------------------------------|
+| `* *`    | user    | record client meeting notes                                           | remember key discussion points with each client                      |
+| `* *`    | user    | view revenue/profit per client                                        | identify my most valuable clients.                                   |
+| `* *`    | user    | record client preferences for preferred communication channel         | contact them in the best way possible                                |
+| `* *`    | user    | group my clients by policy type                                       | quickly filter relevant contacts|
+| `* * *`  | user    | set reminders for policy renewal dates, birthdays, or important dates |  maintain strong client relationships and be reminded to follow up              |
+| `* *`    | user    | edit reminders                                                        | make changes to reminders when I change my mind                                             |
 
 *{More to be added}*
 
@@ -299,28 +299,84 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Delete a person**
+**Use case: UC12 - Set reminder for clients**
 
 **MSS**
 
-1.  User requests to list persons
-2.  AddressBook shows a list of persons
-3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+1.  User searches for the client by their name (UC01) to view their given index.
+2.  User selects the option to set reminder for the client by their index, and enters the reminder and the date and time to remind.
+3.  FinHub validates the updated data.
+4.  FinHub displays a success message.
 
     Use case ends.
 
 **Extensions**
 
-* 2a. The list is empty.
+* 2a. User inputs invalid index.
 
-  Use case ends.
+    * 2a1. FinHub warns that an invalid index has been entered, and prompts the user to input the correct index. 
+  
+    * Step 2a1 is repeated until a correct index has been entered.
+  
+      Use case resumes from step 3.
 
-* 3a. The given index is invalid.
+* 2b. User enters invalid date/time inputs.
 
-    * 3a1. AddressBook shows an error message.
+    * 2b1. FinHub prompts the user to enter proper date/time.
 
-      Use case resumes at step 2.
+    * Step 2b1 is repeated until a correct input has been entered.
+          
+      Use case resumes at step 3.
+
+**Use case: UC13 - Edit reminder for clients**
+
+**MSS**
+
+1.  User searches for the client by their name (UC01) to view their given index.
+2.  User selects the option to edit reminder for the client by their index, and enters the amended reminder and the date and time to remind.
+3.  FinHub validates the updated data.
+4.  FinHub displays a success message.
+
+    Use case ends.
+
+**Extensions**
+
+* 2a. User inputs invalid index.
+
+    * 2a1. FinHub warns that an invalid index has been entered, and prompts the user to input the correct index.
+
+    * Step 2a1 is repeated until a correct index has been entered.
+
+      Use case resumes from step 3.
+
+* 2b. User enters invalid date/time inputs.
+
+    * 2b1. FinHub prompts the user to enter proper date/time.
+
+    * Step 2b1 is repeated until a correct input has been entered.
+
+      Use case resumes at step 3.
+
+**Use case: UC14 - Add client meeting notes**
+
+**MSS**
+
+1.  User searches for the client by their name (UC01) to view their given index.
+2.  User selects the option to add meeting notes for the client by their index, and enters the meeting notes.
+3.  FinHub validates the updated data.
+4.  FinHub displays a success message.
+
+    Use case ends.
+
+**Extensions**
+
+* 2a. User inputs invalid index.
+
+    * 2a1. FinHub warns that an invalid index has been entered, and prompts the user to input the correct index.
+
+    * Step 2a1 is repeated until a correct index has been entered.
+
+      Use case resumes from step 3.
 
 *{More to be added}*
 
