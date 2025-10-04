@@ -284,14 +284,14 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
-|----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | new user                                   | see usage instructions       | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person             |                                                                        |
-| `* * *`  | user                                       | delete a person              | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name        | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name         | locate a person easily                                                 |
+| Priority | As a …​ | I want to …​                                        | So that I can…​                                                                                         |
+|----------|---------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| `*`      | user    | view a dashboard summary of activities              | get an overview of my workload                                                                          |
+| `*`      | user    | keep track of insurance claims requested by clients | easily see what claims are made for the different clients, as well as when the claim has been requested |
+| `*`      | user    | archive inactive clients                            | keep my workspace uncluttered                                                                           |
+| `*`      | user    | export data as a spreadsheet                        | view it more easily                                                                                     |
+| `* * *`  | user    | use CLI                                             | easily find what I am looking for rather than navigating a GUI                                          |
+| `*`      | user    | access FinHub with a password                       | keep my client's information confidential                                                               |
 
 *{More to be added}*
 
@@ -322,7 +322,53 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case resumes at step 2.
 
-*{More to be added}*
+**Use Case: Archive Client**
+
+**Preconditions:**
+1. User is logged into the CLI System.
+
+**MSS**
+
+1.  The user types the archive command.
+2.  The system validates the client ID.
+3.  The system prompts for confirmation.
+4.  The user confirms.
+5.  The system changes the client's status from active to archived in the database.
+6.  The system displays a success message.
+
+    Use case ends.
+
+**Extensions**
+
+* 2a. The client ID does not exist.
+    
+    * 2a1. The system displays a message that client is not found.
+  
+      Use case ends.
+
+* 3a. The user cancels at the confirmation step.
+
+    Use case ends.
+
+**Use Case: Enter Application with Password**
+
+**MSS**
+
+1.  The user launches the application.
+2.  The system prompts user to enter username.
+3.  The user enters their username.
+4.  The system prompts for password.
+5.  The user enters their password.
+6.  The system validates the credentials against stored records.
+7.  If valid, the user is granted access.
+
+**Extensions**
+
+* 6a. The user account does not exist.
+
+    * 6a1. The system will display a message.
+
+      Use case ends.
 
 ### Non-Functional Requirements
 
