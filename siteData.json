@@ -105,7 +105,6 @@
     },
     {
       "src": "UserGuide.md",
-      "title": "User Guide",
       "headings": {
         "finhub-user-guide": "FinHub User Guide",
         "quick-start": "Quick start",
@@ -116,6 +115,8 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-name-find": "Locating persons by name: find",
         "deleting-a-person-delete": "Deleting a person : delete",
+        "adding-a-reminder-reminder": "Adding a reminder : reminder",
+        "deleting-a-reminder-rdelete": "Deleting a reminder : rDelete",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
