@@ -121,6 +121,8 @@
         "unarchiving-a-person-unarchive": "Unarchiving a person : unarchive",
         "adding-a-meeting-note-note": "Adding a meeting note : note",
         "deleting-a-meeting-note-ndelete": "Deleting a meeting note : nDelete",
+        "starring-a-person-star": "Starring a person : star",
+        "removing-star-of-a-person-unstar": "Removing Star of a person : unstar",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
