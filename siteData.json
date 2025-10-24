@@ -117,6 +117,7 @@
         "deleting-a-person-delete": "Deleting a person : delete",
         "adding-a-reminder-reminder": "Adding a reminder : reminder",
         "deleting-a-reminder-rdelete": "Deleting a reminder : rDelete",
+        "editing-a-reminder-redit": "Editing a reminder : rEdit",
         "archiving-a-person-archive": "Archiving a person : archive",
         "unarchiving-a-person-unarchive": "Unarchiving a person : unarchive",
         "adding-a-meeting-note-note": "Adding a meeting note : note",
