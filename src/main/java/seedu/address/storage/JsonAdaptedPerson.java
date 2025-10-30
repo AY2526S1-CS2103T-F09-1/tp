@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import seedu.address.commons.core.LogsCenter;
 import seedu.address.commons.exceptions.IllegalValueException;
 import seedu.address.model.meetingnote.MeetingNote;
 import seedu.address.model.person.Address;
@@ -30,6 +32,7 @@ class JsonAdaptedPerson {
     public static final String STARRED_SIMPLE_NAME = "Starred status";
     public static final String INVALID_ARCHIVED_MESSAGE = "Archive status should be either 'true' or 'false'.";
     public static final String ARCHIVED_SIMPLE_NAME = "Archived";
+    private static final Logger logger = LogsCenter.getLogger(JsonAdaptedPerson.class);
     private final String name;
     private final String phone;
     private final String email;
@@ -150,13 +153,22 @@ class JsonAdaptedPerson {
         final ArrayList<Reminder> modelReminder = new ArrayList<>(personReminders);
 
         if (policy == null) {
+            logger.warning("Missing 'policy' in Person JSON; rejecting entry.");
             throw new IllegalValueException(
                     String.format(MISSING_FIELD_MESSAGE_FORMAT, InsurancePolicy.class.getSimpleName()));
         }
-        if (!InsurancePolicy.isValidPolicy(policy)) {
+        final InsurancePolicy modelPolicy;
+
+        try {
+            modelPolicy = new InsurancePolicy(policy);
+            assert !modelPolicy.toString().isEmpty() : "Policy must be non-empty after validation";
+        } catch (IllegalArgumentException ex) {
+            logger.warning("Invalid 'policy' in Person JSON: '" + policy + "'. Reason: "
+                    + InsurancePolicy.MESSAGE_CONSTRAINTS);
             throw new IllegalValueException(InsurancePolicy.MESSAGE_CONSTRAINTS);
         }
-        final InsurancePolicy modelPolicy = new InsurancePolicy(policy);
+
+
         final ArrayList<MeetingNote> modelMeetingNotes = new ArrayList<>(personMeetingNotes);
 
         if (isStarred == null) {

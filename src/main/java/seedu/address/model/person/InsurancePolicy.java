@@ -18,13 +18,18 @@ public class InsurancePolicy {
     private final String value;
     /**
      * Constructs an {@code InsurancePolicy}.
-     * Trims leading/trailing whitespace and validates constraints.
+     *
+     * @param policy raw input string to validate and store
+     * @throws NullPointerException if {@code policy} is null
+     * @throws IllegalArgumentException if {@code policy} is blank after trimming
+     *     or violates {@link #MESSAGE_CONSTRAINTS}.
      */
     public InsurancePolicy(String policy) {
         requireNonNull(policy);
         final String normalised = policy.trim();
         checkArgument(isValidPolicy(normalised), MESSAGE_CONSTRAINTS);
         this.value = normalised;
+        assert !this.value.isEmpty() : "Invariant: InsurancePolicy.value must not be empty";
     }
 
     /**

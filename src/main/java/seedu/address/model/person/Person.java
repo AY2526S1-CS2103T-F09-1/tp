@@ -56,6 +56,9 @@ public class Person implements Comparable<Person> {
         this.meetingNotes.addAll(meetingNotes);
         this.isStarred = isStarred;
         this.isArchived = false;
+
+        assert policy.toString().trim().equals(policy.toString())
+                : "Policy should always be stored trimmed";
     }
 
     /**
