@@ -64,6 +64,8 @@
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person": "Deleting a person",
         "saving-data": "Saving data",
+        "starring-a-client": "Starring a client",
+        "unstarring-a-client": "Unstarring a client",
         "appendix-effort": "Appendix: Effort"
       },
       "headingKeywords": {}
