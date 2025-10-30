@@ -54,6 +54,7 @@
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "reminders-feature": "Reminders Feature",
+        "meeting-notes-feature": "Meeting Notes Feature",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -67,7 +68,8 @@
         "adding-a-reminder": "Adding a reminder",
         "deleting-a-reminder": "Deleting a reminder",
         "editing-a-reminder": "Editing a reminder",
-        "saving-data": "Saving data",
+        "adding-a-meeting-note": "Adding a meeting note",
+        "deleting-a-meeting-note": "Deleting a meeting note",
         "starring-a-client": "Starring a client",
         "unstarring-a-client": "Unstarring a client",
         "appendix-effort": "Appendix: Effort"
