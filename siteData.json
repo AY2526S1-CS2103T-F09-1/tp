@@ -112,8 +112,10 @@
         "quick-start": "Quick Start",
         "features": "Features",
         "viewing-help-help": "Viewing help : help",
-        "adding-a-client-add": "Adding a client: add",
+        "adding-a-client-add": "Adding a client : add",
         "listing-all-clients-list": "Listing all clients : list",
+        "listing-all-archived-clients-archivelist": "Listing all archived clients : archivelist",
+        "listing-all-active-clients-activelist": "Listing all active clients : activelist",
         "editing-a-client-edit": "Editing a client : edit",
         "locating-clients-by-name-find": "Locating clients by name: find",
         "deleting-a-client-delete": "Deleting a client : delete",
@@ -131,7 +133,7 @@
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
         "faq": "FAQ",
-        "known-issues": "Known Issues",
+        "known-issues": "Known issues",
         "command-summary": "Command Summary"
       },
       "headingKeywords": {}
