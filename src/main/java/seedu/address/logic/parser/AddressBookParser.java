@@ -2,6 +2,7 @@ package seedu.address.logic.parser;
 
 import static seedu.address.logic.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
 import static seedu.address.logic.Messages.MESSAGE_UNKNOWN_COMMAND;
+import static seedu.address.logic.parser.ParserUtil.COMMAND_MAP;
 
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -61,8 +62,11 @@ public class AddressBookParser {
         // log messages such as the one below.
         // Lower level log messages are used sparingly to minimize noise in the code.
         logger.fine("Command word: " + commandWord + "; Arguments: " + arguments);
-
-        switch (commandWord.toLowerCase()) {
+        String formattedCommandWord = COMMAND_MAP.get(commandWord.toLowerCase());
+        if (formattedCommandWord == null) {
+            formattedCommandWord = commandWord;
+        }
+        switch (formattedCommandWord) {
 
         case AddCommand.COMMAND_WORD:
             return new AddCommandParser().parse(arguments);
@@ -97,10 +101,10 @@ public class AddressBookParser {
         case HelpCommand.COMMAND_WORD:
             return new HelpCommand();
 
-        case DeleteReminderCommand.COMMAND_WORD_LOWERCASE:
+        case DeleteReminderCommand.COMMAND_WORD:
             return new DeleteReminderCommandParser().parse(arguments);
 
-        case EditReminderCommand.COMMAND_WORD_LOWERCASE:
+        case EditReminderCommand.COMMAND_WORD:
             return new EditReminderCommandParser().parse(arguments);
 
         case ArchiveCommand.COMMAND_WORD:
@@ -112,7 +116,7 @@ public class AddressBookParser {
         case AddMeetingNoteCommand.COMMAND_WORD:
             return new AddMeetingNoteCommandParser().parse(arguments);
 
-        case DeleteMeetingNoteCommand.COMMAND_WORD_LOWERCASE:
+        case DeleteMeetingNoteCommand.COMMAND_WORD:
             return new DeleteMeetingNoteCommandParser().parse(arguments);
 
         case StarCommand.COMMAND_WORD:

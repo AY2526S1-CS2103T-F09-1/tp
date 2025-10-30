@@ -6,7 +6,9 @@ import static seedu.address.model.reminder.Reminder.DEADLINE_MESSAGE_CONSTRAINTS
 import static seedu.address.model.reminder.Reminder.HEADER_MESSAGE_CONSTRAINTS;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import seedu.address.commons.core.index.Index;
@@ -30,6 +32,27 @@ public class ParserUtil {
     public static final String MULTIPLE_SPACES_REGEX = "\\s+";
     public static final String LOGGING_MESSAGE_PARSE_INDEX = "Successfully parsed index: ";
     public static final String LOGGING_MESSAGE_PARSE_FAILURE = "Failed to parse arguments";
+    public static final Map<String, String> COMMAND_MAP = new HashMap<>() {{
+                put("help", "help");
+                put("add", "add");
+                put("list", "list");
+                put("archivelist", "archivelist");
+                put("activelist", "activelist");
+                put("edit", "edit");
+                put("find", "find");
+                put("delete", "delete");
+                put("reminder", "reminder");
+                put("rdelete", "rDelete");
+                put("redit", "rEdit");
+                put("archive", "archive");
+                put("unarchive", "unarchive");
+                put("note", "note");
+                put("ndelete", "nDelete");
+                put("star", "star");
+                put("unstar", "unstar");
+                put("clear", "clear");
+                put("exit", "exit");
+            }};
 
     /**
      * Parses {@code oneBasedIndex} into an {@code Index} and returns it. Leading and trailing whitespaces will be
