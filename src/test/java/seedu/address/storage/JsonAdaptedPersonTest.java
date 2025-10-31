@@ -13,22 +13,17 @@ import static seedu.address.testutil.TypicalPersons.BENSON;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 
 import seedu.address.commons.exceptions.IllegalValueException;
-import seedu.address.model.meetingnote.MeetingNote;
 import seedu.address.model.person.Address;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.InsurancePolicy;
 import seedu.address.model.person.Name;
-import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
-import seedu.address.model.reminder.Reminder;
-import seedu.address.model.tag.Tag;
 
 public class JsonAdaptedPersonTest {
     private static final String INVALID_NAME = "R@chel";
@@ -62,20 +57,6 @@ public class JsonAdaptedPersonTest {
     private static final List<JsonAdaptedMeetingNote> VALID_MEETING_NOTES = Arrays.asList(VALID_MEETING_NOTE);
     private static final String VALID_ARCHIVED = "false";
 
-    private Person newMinimalPerson() {
-        return new Person(
-                new Name(VALID_NAME),
-                new Phone(VALID_PHONE),
-                new Email(VALID_EMAIL),
-                new Address(VALID_ADDRESS),
-                new HashSet<Tag>(),
-                new ArrayList<Reminder>(),
-                new InsurancePolicy(VALID_POLICY),
-                new ArrayList<MeetingNote>(),
-                /* isStarred */ false,
-                /* isArchived */ false
-        );
-    }
 
     @Test
     public void toModelType_validPersonDetails_returnsPerson() throws Exception {
@@ -197,38 +178,6 @@ public class JsonAdaptedPersonTest {
                         VALID_REMINDERS, null, VALID_MEETING_NOTES, VALID_STARRED, VALID_ARCHIVED);
         String expectedMessage = String.format(MISSING_FIELD_MESSAGE_FORMAT, InsurancePolicy.class.getSimpleName());
         assertThrows(IllegalValueException.class, expectedMessage, person::toModelType);
-    }
-
-    @Test
-    public void toModelType_missingPolicy_throwsIllegalValueException() {
-        JsonAdaptedPerson adapted = new JsonAdaptedPerson(
-                VALID_NAME, VALID_PHONE, VALID_EMAIL, VALID_ADDRESS,
-                /* tags */ new ArrayList<>(),
-                /* reminders */ new ArrayList<>(),
-                /* insurancePolicy */ null,
-                /* meetingNotes */ new ArrayList<>(),
-                /* isStarred */ "false",
-                /* isArchived */ "false"
-        );
-
-        assertThrows(IllegalValueException.class, adapted::toModelType);
-    }
-
-    @Test
-    public void toModelType_validRoundTrip_success() throws Exception {
-        Person original = newMinimalPerson();
-
-        JsonAdaptedPerson adapted = new JsonAdaptedPerson(original);
-        Person restored = adapted.toModelType();
-
-        // Spot-check key fields instead of deep equals (keeps test resilient)
-        assertEquals(original.getName().fullName, restored.getName().fullName);
-        assertEquals(original.getPhone().value, restored.getPhone().value);
-        assertEquals(original.getEmail().value, restored.getEmail().value);
-        assertEquals(original.getAddress().value, restored.getAddress().value);
-        assertEquals(original.getPolicy().toString(), restored.getPolicy().toString());
-        assertEquals(original.isStarred(), restored.isStarred());
-        assertEquals(original.isArchived(), restored.isArchived());
     }
 
     @Test
