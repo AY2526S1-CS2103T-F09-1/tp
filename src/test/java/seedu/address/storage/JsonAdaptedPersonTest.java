@@ -57,6 +57,7 @@ public class JsonAdaptedPersonTest {
     private static final List<JsonAdaptedMeetingNote> VALID_MEETING_NOTES = Arrays.asList(VALID_MEETING_NOTE);
     private static final String VALID_ARCHIVED = "false";
 
+
     @Test
     public void toModelType_validPersonDetails_returnsPerson() throws Exception {
         JsonAdaptedPerson person = new JsonAdaptedPerson(BENSON);
@@ -227,5 +228,6 @@ public class JsonAdaptedPersonTest {
         String expectedMessage = String.format(MISSING_FIELD_MESSAGE_FORMAT, ARCHIVED_SIMPLE_NAME);
         assertThrows(IllegalValueException.class, expectedMessage, person::toModelType);
     }
+
 
 }

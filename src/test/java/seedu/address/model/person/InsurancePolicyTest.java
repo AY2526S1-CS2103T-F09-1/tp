@@ -48,6 +48,12 @@ public class InsurancePolicyTest {
     }
 
     @Test
+    public void isValidPolicy_allowsHyphenAndPlus() {
+        assertTrue(InsurancePolicy.isValidPolicy("Great Eastern LifePlan-2025"));
+        assertTrue(InsurancePolicy.isValidPolicy("AXA + Life & Health / 2025"));
+    }
+
+    @Test
     public void isValidPolicy_invalid_returnsFalse() {
         assertFalse(InsurancePolicy.isValidPolicy(""));
         assertFalse(InsurancePolicy.isValidPolicy("   "));
