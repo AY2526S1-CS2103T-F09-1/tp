@@ -59,70 +59,32 @@
     },
     {
       "src": "Documentation.md",
-      "title": "Documentation guide",
-      "headings": {
-        "documentation-guide": "Documentation Guide"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "Logging.md",
-      "title": "Logging guide",
-      "headings": {
-        "logging-guide": "Logging guide"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "SettingUp.md",
-      "title": "Setting up and getting started",
-      "headings": {
-        "setting-up-and-getting-started": "Setting up and getting started",
-        "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
-        "before-writing-code": "Before writing code"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "Testing.md",
-      "title": "Testing guide",
-      "headings": {
-        "testing-guide": "Testing guide",
-        "running-tests": "Running tests",
-        "types-of-tests": "Types of tests"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "UserGuide.md",
-      "title": "User Guide",
-      "headings": {
-        "finhub-user-guide": "FinHub User Guide",
-        "target-user-and-assumptions-made": "Target User and Assumptions Made",
-        "table-of-contents": "Table of Contents",
-        "1-quick-start": "1. Quick Start",
-        "2-features": "2. Features",
-        "2-1-general-commands": "2.1 General Commands",
-        "2-2-managing-clients": "2.2 Managing Clients",
-        "2-3-reminders": "2.3 Reminders",
-        "2-4-meeting-notes": "2.4 Meeting Notes",
-        "3-data-and-storage": "3. Data and Storage",
-        "3-1-saving-the-data": "3.1 Saving the data",
-        "3-2-editing-the-data-file": "3.2 Editing the data file",
-        "3-3-transferring-data-to-another-computer": "3.3 Transferring Data to another Computer",
-        "4-faq": "4. FAQ",
-        "5-known-issues": "5. Known Issues",
-        "6-command-summary": "6. Command Summary",
-        "7-glossary": "7. Glossary"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "index.md",
-      "title": "",
-      "headings": {
-        "finhub": "FinHub"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
@@ -142,10 +104,7 @@
     },
     {
       "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
-      "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
