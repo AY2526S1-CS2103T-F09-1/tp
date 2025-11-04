@@ -844,8 +844,6 @@ Restore a backup of that file or delete it to regenerate sample data. Try to avo
 
 <br>
 
-<div style="page-break-after: always;"></div>
-
 --------------------------------------------------------------------------------------------------------------------
 
 ## <font color=##3a5a40>5. Known Issues</font>
