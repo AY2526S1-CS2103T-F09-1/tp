@@ -2008,5 +2008,5 @@ Currently, we only allow English name inputs with ASCII characters as our target
 Singaporean clients with English names. Since it is possible for an individual to have only non-English name and names
 with accents, such as 习近平 and Müller we plan to update `VALIDATION_REGEX` of  `NAME` to include such possibilities .
 
-### 7. Support for Names with Foreign Accents and Different Languages
-Currently, when adding or editing a client, we display the same error message: "This client's phone number or email already exists in FinHub," if either the phone number or email already exists in the system. In the future, we plan to differentiate these error messages, providing clearer feedback to users so they can more easily identify where the issue lies in their input.
+### 7. Support for Different Error Messages When Adding or Editing a Client
+Currently, when adding or editing a client, the error message "This client's phone number or email already exists in FinHub" is displayed if either the phone number or email already exists in the system. In the future, we plan to differentiate these error messages to provide clearer feedback, helping users more easily identify which specific input is causing the issue.
