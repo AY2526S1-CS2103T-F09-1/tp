@@ -87,7 +87,8 @@
         "3-allow-unarchiving-of-clients-on-general-list": "3. Allow unarchiving of clients on general list",
         "4-display-archive-status-for-clients-in-general-list": "4. Display archive status for clients in general list",
         "5-allow-names-with-foreign-accents-and-of-different-languages": "5. Allow names with foreign accents and of different languages",
-        "6-color-code-reminders-that-have-a-deadline-in-the-past": "6. Color-code reminders that have a deadline in the past"
+        "6-color-code-reminders-that-have-a-deadline-in-the-past": "6. Color-code reminders that have a deadline in the past",
+        "7-support-for-different-error-messages-when-adding-or-editing-a-client": "7. Support for Different Error Messages When Adding or Editing a Client"
       },
       "headingKeywords": {}
     },
