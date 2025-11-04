@@ -405,8 +405,7 @@ The sequence diagram below illustrates the flow of interactions when the user en
 the person at the specified index is retrieved, and the archived status is updated in the model. Key components include
 the `CommandBox`, `LogicManager`, `ArchiveCommandParser`, and `Model`.
 
-<puml src="diagrams/archive-feature/ArchiveSequenceDiagram.puml"
-alt="Interactions for the `archive 1` Command" />
+<puml src="diagrams/archive-feature/ArchiveSequenceDiagram.puml" alt="Interactions for the `archive 1` Command" />
 
 
 <br>
