@@ -14,7 +14,7 @@
 
 ## **Acknowledgements**
 
-FinHub was adapted from AddressBook-Level3 (AB3) created by the [SE-EDU initiative](https://se-education.org)
+FinHub was adapted from AddressBook-Level3 (AB3) created by the [SE-EDU initiative](https://se-education.org).
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ The *Sequence Diagram* below shows how the components interact with each other f
 Each of the four main components (also shown in the diagram above),
 
 * defines its *API* in an `interface` with the same name as the Component.
-* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding API `interface` mentioned in the previous point.
+* implements its functionality using a concrete `{Component Name}Manager` class (which follows the corresponding API `interface` mentioned in the previous point).
 
 For example, the `Logic` component defines its API in the `Logic.java` interface and implements its functionality using the `LogicManager.java` class which follows the `Logic` interface. Other components interact with a given component through its interface rather than the concrete class (reason: to prevent outside component's being coupled to the implementation of a component), as illustrated in the (partial) class diagram below.
 
@@ -147,7 +147,7 @@ The `Model` component,
 The `Storage` component,
 * can save both address book data and user preference data in JSON format, and read them back into corresponding objects.
 * inherits from both `AddressBookStorage` and `UserPrefStorage`, which means it can be treated as either one (if only the functionality of only one is needed).
-* depends on some classes in the `Model` component (because the `Storage` component's job is to save/retrieve objects that belong to the `Model`)
+* depends on some classes in the `Model` component (because the `Storage` component's job is to save/retrieve objects that belong to the `Model`).
 
 ### Common classes
 
@@ -318,8 +318,7 @@ Due to the diagram's detailed nature, it may appear small. If it's unclear, zoom
 ### Archive Client Feature
 
 #### Challenges
-* We wanted FinHub to be able to archive clients that are not currently active. This means that we need to be able to
-* identify active and archived clients. To do this, we had to create new lists to check for active and archived clients.
+* We wanted FinHub to be able to archive clients that are not currently active. This means that we need to be able to identify active and archived clients. To do this, we had to create new lists to check for active and archived clients.
 
 #### Implementation Details
 
