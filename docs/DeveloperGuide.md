@@ -2006,4 +2006,11 @@ so that it is easier for the user to tell which clients are active or archived.
 ### 5. Allow names with foreign accents and of different languages
 Currently, we only allow English name inputs with ASCII characters as our target audience are insurance agents that have 
 Singaporean clients with English names. Since it is possible for an individual to have only non-English name and names
-with accents, such as 习近平 and Müller we plan to update `VALIDATION_REGEX` of  `NAME` to include such possibilities .
+with accents, such as 习近平 and Müller we plan to update `VALIDATION_REGEX` of  `NAME` to include such possibilities.
+
+### 6. Color-code reminders that have a deadline in the past
+Currently, we allow users to add reminders that have deadlines set in the past and also deadlines set in the future.
+However, besides the warning message upon adding reminders, there is no obvious color-code in the GUI's display for 
+said reminders with deadlines set in the past. We plan to add this color-coding to reminders that have deadlines set in
+the past.
+
