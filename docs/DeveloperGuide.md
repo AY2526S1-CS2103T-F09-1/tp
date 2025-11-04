@@ -417,7 +417,7 @@ The activity diagram outlines the detailed workflow that happens when the `archi
 It shows the decision points for validating the index, checking if the person is already archived,
 and updating the model accordingly. If successful, the system returns a success message.
 
-<puml src="diagrams/archive-feature/ArchiveActivityDiagram.puml"/>
+<puml src="diagrams/archive-feature/ArchiveActivityDiagram.puml/>
 
 
 <br>
