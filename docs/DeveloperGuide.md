@@ -2016,3 +2016,7 @@ the past.
 ### 7. Support for Different Error Messages When Adding or Editing a Client
 Currently, when adding or editing a client, the error message "This client's phone number or email already exists in FinHub" is displayed if either the phone number or email already exists in the system. In the future, we plan to differentiate these error messages to provide clearer feedback, helping users more easily identify which specific input is causing the issue.
 
+### 8. Allow editing of tags
+In the future, we plan to improve the tag editing feature to make it more flexible and intuitive. Instead of replacing 
+all existing tags when users make changes, they’ll be able to add to their current tags or update them more easily.
+
