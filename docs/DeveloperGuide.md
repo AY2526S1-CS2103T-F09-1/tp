@@ -2008,5 +2008,12 @@ Currently, we only allow English name inputs with ASCII characters as our target
 Singaporean clients with English names. Since it is possible for an individual to have only non-English name and names
 with accents, such as 习近平 and Müller we plan to update `VALIDATION_REGEX` of  `NAME` to include such possibilities .
 
+### 6. Color-code reminders that have a deadline in the past
+Currently, we allow users to add reminders that have deadlines set in the past and also deadlines set in the future.
+However, besides the warning message upon adding reminders, there is no obvious color-code in the GUI's display for
+said reminders with deadlines set in the past. We plan to add this color-coding to reminders that have deadlines set in
+the past.
+
 ### 7. Support for Different Error Messages When Adding or Editing a Client
 Currently, when adding or editing a client, the error message "This client's phone number or email already exists in FinHub" is displayed if either the phone number or email already exists in the system. In the future, we plan to differentiate these error messages to provide clearer feedback, helping users more easily identify which specific input is causing the issue.
+
