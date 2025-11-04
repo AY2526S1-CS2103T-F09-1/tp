@@ -51,6 +51,8 @@ Our target users are insurance agents who:
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 <!-- @@author oyanzhi -->
 <!-- * Table of Contents -->
@@ -91,6 +93,9 @@ Our target users are insurance agents who:
 
 <br>
 <!-- @@author -->
+
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## <font color=#3a5a40>1. Quick Start</font>
@@ -186,6 +191,8 @@ and must include at least one letter or digit.
 
 </box>
 
+<div style="page-break-after: always;"></div>
+
 ### <font color=#588157>2.1 General Commands</font>
 
 #### <font color=#5a9f68>2.1.1 Viewing help : `help`</font>
@@ -211,6 +218,8 @@ Below is an image showing what you should expect to see after running the list c
 ![all list](images/list.png)
 
 <br>
+
+<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -271,6 +280,8 @@ FinHub has been cleared!
 <br>
 
 <!-- @@author -->
+
+<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -379,6 +390,8 @@ Address: Blk 30 Lorong 3 Serangoon Gardens, #07-18; Insurance Policy: Health pol
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 #### <font color=#5a9f68>2.2.4 Locating clients by name : `find`</font>
@@ -473,6 +486,8 @@ Starred status removed from Client: Alex Yeoh; Phone: 87438807; Email: alexyeoh@
 
 <!-- @@author-->
 
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 #### <font color=#5a9f68>2.2.7 Archiving a client : `archive`</font>
@@ -513,8 +528,6 @@ Client archived: Alex Yeoh; Phone: 87438807; Email: alexyeoh@example.com; Addres
 </box>
 
 <br>
-
-<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -637,6 +650,8 @@ Examples:
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 #### <font color=#5a9f68>2.3.3 Editing a reminder : `rEdit`</font>
@@ -716,6 +731,8 @@ Examples:
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 #### <font color=#5a9f68>2.4.2 Deleting a meeting note : `nDelete`</font>
@@ -760,8 +777,6 @@ FinHub data are saved in the hard disk automatically after any command that chan
 save manually.
 
 <br>
-
-<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -846,6 +861,8 @@ Restore a backup of that file or delete it to regenerate sample data. Try to avo
 --------------------------------------------------------------------------------------------------------------------
 <!-- @@author aloy-pek -->
 
+<div style="page-break-after: always;"></div>
+
 ## <font color=##3a5a40>6. Command Summary</font>
 
 | Action                                                         | Format, Examples                                                                                                                                                                          |
@@ -870,6 +887,9 @@ Restore a backup of that file or delete it to regenerate sample data. Try to avo
 | [**nDelete**](#2-4-2-deleting-a-meeting-note-ndelete)          | `nDelete CLIENT_INDEX MEETING_NOTE_INDEX`<br> e.g., `nDelete 1 1`                                                                                                                         |
 
 <!-- @@JunhaoW3 -->
+
+<div style="page-break-after: always;"></div>
+
 ## <font color=##3a5a40>7. Glossary</font>
 
 | Term / Command                               | Meaning                                                                                                                               |
