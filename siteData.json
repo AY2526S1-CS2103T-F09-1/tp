@@ -53,106 +53,38 @@
         "implementation": "Implementation",
         "reminders-feature": "Reminders Feature",
         "meeting-notes-feature": "Meeting Notes Feature",
-        "star-client-feature": "Star Client Feature",
-        "insurance-policy-feature": "Insurance Policy Feature",
-        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
-        "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
-        "appendix-requirements": "Appendix: Requirements",
-        "product-scope": "Product scope",
-        "user-stories": "User stories",
-        "use-cases": "Use cases",
-        "non-functional-requirements": "Non-Functional Requirements",
-        "glossary": "Glossary",
-        "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
-        "launch-and-shutdown": "Launch and shutdown",
-        "adding-a-reminder": "Adding a reminder",
-        "deleting-a-reminder": "Deleting a reminder",
-        "editing-a-reminder": "Editing a reminder",
-        "adding-a-meeting-note": "Adding a meeting note",
-        "deleting-a-meeting-note": "Deleting a meeting note",
-        "adding-a-client": "Adding a client",
-        "editing-a-client": "Editing a client",
-        "archiving-a-client": "Archiving a client",
-        "unarchiving-a-client": "Unarchiving a client",
-        "starring-a-client": "Starring a client",
-        "unstarring-a-client": "Unstarring a client",
-        "finding-for-a-client": "Finding for a client",
-        "appendix-effort": "Appendix: Effort",
-        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
-        "team-size-5": "Team size: 5",
-        "1-allow-editing-of-existing-notes": "1. Allow editing of existing notes",
-        "2-allow-multiple-phone-numbers-per-client": "2. Allow multiple phone numbers per client",
-        "3-allow-names-with-foreign-accents-and-of-different-languages": "3. Allow names with foreign accents and of different languages"
+        "archive-client-feature": "Archive Client Feature"
       },
       "headingKeywords": {}
     },
     {
       "src": "Documentation.md",
-      "title": "Documentation guide",
-      "headings": {
-        "documentation-guide": "Documentation Guide"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "Logging.md",
-      "title": "Logging guide",
-      "headings": {
-        "logging-guide": "Logging guide"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "SettingUp.md",
-      "title": "Setting up and getting started",
-      "headings": {
-        "setting-up-and-getting-started": "Setting up and getting started",
-        "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
-        "before-writing-code": "Before writing code"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "Testing.md",
-      "title": "Testing guide",
-      "headings": {
-        "testing-guide": "Testing guide",
-        "running-tests": "Running tests",
-        "types-of-tests": "Types of tests"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "UserGuide.md",
-      "title": "User Guide",
-      "headings": {
-        "finhub-user-guide": "FinHub User Guide",
-        "target-user-and-assumptions-made": "Target User and Assumptions Made",
-        "table-of-contents": "Table of Contents",
-        "1-quick-start": "1. Quick Start",
-        "2-features": "2. Features",
-        "2-1-general-commands": "2.1 General Commands",
-        "2-2-managing-clients": "2.2 Managing Clients",
-        "2-3-reminders": "2.3 Reminders",
-        "2-4-meeting-notes": "2.4 Meeting Notes",
-        "3-data-and-storage": "3. Data and Storage",
-        "3-1-saving-the-data": "3.1 Saving the data",
-        "3-2-editing-the-data-file": "3.2 Editing the data file",
-        "3-3-transferring-data-to-another-computer": "3.3 Transferring Data to another Computer",
-        "4-faq": "4. FAQ",
-        "5-known-issues": "5. Known Issues",
-        "6-command-summary": "6. Command Summary",
-        "7-glossary": "7. Glossary"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
       "src": "index.md",
-      "title": "",
-      "headings": {
-        "finhub": "FinHub"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
@@ -172,10 +104,7 @@
     },
     {
       "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
-      "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
-      },
+      "headings": {},
       "headingKeywords": {}
     },
     {
