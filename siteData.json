@@ -77,7 +77,12 @@
         "unarchiving-a-client": "Unarchiving a client",
         "starring-a-client": "Starring a client",
         "unstarring-a-client": "Unstarring a client",
-        "appendix-effort": "Appendix: Effort"
+        "finding-for-a-client": "Finding for a client",
+        "appendix-effort": "Appendix: Effort",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
+        "team-size-5": "Team size: 5",
+        "1-allow-editing-of-existing-notes": "1. Allow editing of existing notes",
+        "2-allow-multiple-phone-numbers-per-client": "2. Allow multiple phone numbers per client"
       },
       "headingKeywords": {}
     },
